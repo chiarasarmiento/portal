@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="intro">
+                <h1>👋Welcome</h1>
+                <p>This page serves as a basic demonstration of login and registration functionality. Feel free to explore its features by using dummy account details for testing purposes.</p>
+            </div>
+            <div class="forms">
+                <div id="buttons">
+                    <a href="#login" class="login-btn btn active">Login</a>
+                    <a href="#register" class="register-btn btn">Register</a>
+                </div>
+                <div id="login">
+                    <form action="" method="POST" id="login-form">
+                        <input type="email" name="Email_Address" class="user" placeholder="example@domain.com" required>
+                        <input type="password" name="Password" class="password" placeholder="Password" required>
+                        <a href="#" id="forgot-password">Forgot Password?</a>
+                        <div class="msg"></div>
+                        <button type="submit" name="submit-login">Submit</button>
+                    </form>
+                    Don't have an account? <a href="#register" class="register-btn">Register</a> 
+                </div>
+                <div id="register">
+                    <form action="" method="POST" id="registration-form">
+                        <input type="text" name="First_Name" class="user" placeholder="First Name" required>
+                        <input type="text" name="Last_Name" class="user" placeholder="Last Name" required>
+                        <input type="email" name="Email_Address" class="user" placeholder="Email Address" required>
+                        <input type="password" name="Password" id="password" class="password" placeholder="Password" required>
+                        <input type="password" name="Confirm_Password" class="password" placeholder="Confirm Password" required>
+                        <div class="msg"></div>
+                        <button type="submit" name="submit-register">Submit </button>
+                    </form>
+                    Already have an account? <a href="#login" class="login-btn">Login</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="./assests/js/script.js"></script>
+</body>
+</html>
